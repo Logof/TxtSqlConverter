@@ -1,0 +1,183 @@
+<html>
+ <head></head>
+ <body>
+  <table>
+   <tr>
+    <th>Name</th>
+    <td>table_name</td>
+   </tr>
+   <tr>
+    <th>Comment</th>
+    <td>Comment on table</td>
+   </tr>
+   <tr>
+    <th>Options</th>
+    <td></td>
+   </tr>
+  </table>Список полей таблицы table
+  <table>
+   <tr>
+    <th>Name</th>
+    <th>Data Type</th>
+    <th>Primary</th>
+    <th>Mandatory</th>
+    <th>Foreign Key</th>
+    <th>Comment</th>
+   </tr>
+   <tr>
+    <td>id</td>
+    <td>BIGINT</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>Идентификатор записи</td>
+   </tr>
+   <tr>
+    <td>task_id</td>
+    <td>BIGINT</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>Идентификатор задания</td>
+   </tr>
+   <tr>
+    <td>create_date</td>
+    <td>TIMESTAMP</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>Дата создания</td>
+   </tr>
+   <tr>
+    <td>update_date</td>
+    <td>TIMESTAMP</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>Дата обновления</td>
+   </tr>
+   <tr>
+    <td>start_date</td>
+    <td>TIMESTAMP</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Дата начала</td>
+   </tr>
+   <tr>
+    <td>end_date</td>
+    <td>TIMESTAMP</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Дата окончания</td>
+   </tr>
+   <tr>
+    <td>format_id</td>
+    <td>BIGINT</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>Формат</td>
+   </tr>
+   <tr>
+    <td>deadline</td>
+    <td>TIMESTAMP</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Крайний срок</td>
+   </tr>
+   <tr>
+    <td>setting_code</td>
+    <td>VARCHAR(50)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Код настройки</td>
+   </tr>
+   <tr>
+    <td>setting_id</td>
+    <td>BIGINT</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>Идентификатор настройки</td>
+   </tr>
+   <tr>
+    <td>storage_system</td>
+    <td>CHAR(2)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Код хранилища</td>
+   </tr>
+   <tr>
+    <td>params_json</td>
+    <td>JSONB</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Параметры</td>
+   </tr>
+   <tr>
+    <td>status_code</td>
+    <td>VARCHAR(2)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Статус</td>
+   </tr>
+   <tr>
+    <td>status_message</td>
+    <td>VARCHAR(500)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Описание статуса</td>
+   </tr>
+   <tr>
+    <td>send_date</td>
+    <td>TIMESTAMP</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Дата отправки</td>
+   </tr>
+  </table>Список индексов таблицы table
+  <table>
+   <tr>
+    <th>Name</th>
+    <th>Unique</th>
+    <th colspan="1">Index columns</th>
+   </tr>
+   <tr>
+    <td colspan="1">pk_table</td>
+    <td colspan="1">X</td>
+    <td colspan="1">id</td>
+   </tr>
+  </table> Внешний ключ table
+  <table>
+   <tr>
+    <td>Name</td>
+    <td>fk_table</td>
+   </tr>
+   <tr>
+    <td>Child Table</td>
+    <td>child_table</td>
+   </tr>
+   <tr>
+    <td>Parent Table</td>
+    <td>table</td>
+   </tr>
+   <tr>
+    <td>Foreign Key Columns</td>
+    <td>task_id</td>
+   </tr>
+   <tr>
+    <td>Parent Key Columns</td>
+    <td>id</td>
+   </tr>
+  </table>
+ </body>
+</html>
